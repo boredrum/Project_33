@@ -28,7 +28,7 @@ describe("validateEmail", function(){
             assert.isFalse(validateEmail('@emailgmail.com'), '@ the first character');
         });
         it('length less than 5 chars', () =>{                   // EXCERCISE 2
-            assert.equal(validateEmail('test'), false, 'length more than 5 chars');
+            assert.equal(validateEmail('test'), false, 'length less than 5 chars');
         });
         it('Has two or more @', function(){                   // EXCERCISE 3
             assert.isFalse(validateEmail('em@il@gmail.com'), 'More than one @');
